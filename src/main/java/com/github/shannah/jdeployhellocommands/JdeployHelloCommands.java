@@ -31,7 +31,8 @@ public class JdeployHelloCommands extends JFrame {
                     int exitCode = Integer.parseInt(args[1]);
                     System.exit(exitCode);
                 } catch (NumberFormatException e) {
-                    System.err.println("Error: Second argument must be an integer");
+                    System.err.println("Error: Second argument must be an integer but found " + args[1]);
+                    System.err.println("Args length is " + args.length);
                     System.exit(1);
                 }
             }
