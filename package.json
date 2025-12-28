@@ -19,7 +19,11 @@
             "url": "shannah/jdeploy-hello-commands"
         }],
         "javaVersion": "21",
-        "documentTypes": [],
+        "documentTypes": [{
+            "editor": true,
+            "extension": "txt",
+            "mimetype": "text/plain"
+        }],
         "jar": "target/jdeploy-hello-commands-1.0-SNAPSHOT.jar",
         "javafx": false,
         "title": "Hello Commands",
