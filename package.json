@@ -23,7 +23,7 @@
         "jar": "target/jdeploy-hello-commands-1.0-SNAPSHOT.jar",
         "javafx": false,
         "title": "Hello Commands",
-        "commands": [{
+        "commands": {
             "hellosteve": {
                 "args": ["Hello Steve!"],
                 "description": "Says hello to Steve"
@@ -32,7 +32,7 @@
                 "args": ["Goodbye Steve!"],
                 "description": "Says goodbye to Steve"
             }
-        }],
+        },
         "downloadPage": {"platforms": ["default"]},
         "platformBundlesEnabled": false
     },
