@@ -4,10 +4,8 @@
     "description": "jDeploy app with commands",
     "main": "index.js",
     "preferGlobal": true,
-    "repository": "",
     "version": "1.0.0",
     "jdeploy": {
-        "jdk": false,
         "fallbackToUniversal": false,
         "buildCommand": [
             "./mvnw",
@@ -25,10 +23,18 @@
             "mimetype": "text/plain"
         }],
         "jar": "target/jdeploy-hello-commands-1.0-SNAPSHOT.jar",
-        "javafx": false,
         "title": "Hello Commands",
         "commands": {
+            "stevectl": {
+                "implements": ["service_controller"],
+                "description": "Steve Service Controller"
+            },
+            "stevelaunch": {
+                "implements": ["launcher"],
+                "description": "Launches the app"
+            },
             "hellosteve": {
+                "implements": ["updater"],
                 "args": ["Hello Steve!"],
                 "description": "Says hello to Steve"
             },
